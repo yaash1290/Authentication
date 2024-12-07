@@ -23,7 +23,7 @@ function Login() {
       return handleError("Something is missing");
     }
     try {
-      const url = "http://localhost:8000/api/v1/user/login";
+      const url = "https://authentication-k5yq.onrender.com/api/v1/user/login";
       const response = await fetch(url, {
         method: "POST",
         headers: {

@@ -26,7 +26,7 @@ const submitHandler=async(e)=>{
     return handleError('Something is missing');
   }
   try {
-    const url = "http://localhost:8000/api/v1/user/register";
+    const url = "https://authentication-k5yq.onrender.com/api/v1/user/register";
     const response = await fetch(url , {
       method:"POST",
       headers:{
