@@ -20,7 +20,7 @@ function Login() {
     e.preventDefault();
     const { email, password } = input;
     if (!email || !password) {
-      alert("Something is missing");
+      return handleError("Something is missing");
     }
     try {
       const url = "http://localhost:8000/api/v1/user/login";
